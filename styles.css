@@ -1,0 +1,106 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #050505;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #1a001f;
+    padding: 20px;
+    font-size: 24px;
+    border-bottom: 3px solid #7a00cc;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #d49fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+/* Columnas */
+.left-column, .right-column {
+    width: 45%;
+    background-color: #0d0014;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #7a00cc;
+    min-height: 300px;
+}
+
+/* Botones */
+button {
+    background-color: #7a00cc;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #5e0099;
+}
+
+/* Inputs */
+input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #7a00cc;
+    background-color: #1a001f;
+    color: white;
+    width: 80%;
+}
+
+/* Lista de canciones */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #7a00cc;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Chat */
+#chat-box {
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #7a00cc;
+    padding: 10px;
+    background: #1a001f;
+}
+
+/* Reproductor de audio */
+audio {
+    margin-top: 10px;
+}
