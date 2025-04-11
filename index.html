@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
@@ -23,7 +22,7 @@
     <section id="radio">
         <h2>Escucha la Radio</h2>
         <audio id="stream-player" controls autoplay>
-            <source id="stream-source" src="http://tu-servidor:8000/stream" type="audio/mpeg">
+            <source id="stream-source" src="https://tu-ngrok-url.ngrok.io/radio" type="audio/mpeg">
             Tu navegador no soporta el audio en vivo.
         </audio>
     </section>
@@ -41,7 +40,7 @@
             </section>
 
             <section id="solicitudes">
-                <h2>Pedir Canción</h2>
+                <h2>Pedir Cancion</h2>
                 <input type="text" id="song-request" placeholder="Escribe la canción..." onkeypress="if(event.key === 'Enter') requestSong()">
                 <button onclick="requestSong()">Enviar</button>
                 <ul id="song-list"></ul>
