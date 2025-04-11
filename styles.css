@@ -1,14 +1,10 @@
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     background-color: #050505;
     color: white;
     text-align: center;
-    margin: 0;
-    padding: 0;
 }
 
-/* Encabezado */
 header {
     background-color: #1a001f;
     padding: 20px;
@@ -16,7 +12,6 @@ header {
     border-bottom: 3px solid #7a00cc;
 }
 
-/* Menú de navegación */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -33,25 +28,23 @@ nav ul li a {
     font-size: 18px;
 }
 
-/* Contenedor principal */
 .container {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    align-items: flex-start;
     margin: 20px;
+    flex-wrap: wrap;
 }
 
-/* Columnas */
 .left-column, .right-column {
     width: 45%;
     background-color: #0d0014;
     padding: 20px;
     border-radius: 10px;
     border: 1px solid #7a00cc;
-    min-height: 300px;
+    margin: 10px 0;
 }
 
-/* Botones */
 button {
     background-color: #7a00cc;
     border: none;
@@ -60,14 +53,12 @@ button {
     font-size: 16px;
     border-radius: 5px;
     color: white;
-    margin-top: 10px;
 }
 
 button:hover {
     background-color: #5e0099;
 }
 
-/* Inputs */
 input {
     padding: 10px;
     margin: 10px;
@@ -75,32 +66,46 @@ input {
     border: 1px solid #7a00cc;
     background-color: #1a001f;
     color: white;
-    width: 80%;
 }
 
-/* Lista de canciones */
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    background: #7a00cc;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-/* Chat */
 #chat-box {
-    height: 200px;
+    height: 300px;
     overflow-y: auto;
-    border: 1px solid #7a00cc;
+    border: 2px solid white;
     padding: 10px;
-    background: #1a001f;
+    background-color: #000;
+    border-radius: 10px;
+    text-align: left;
 }
 
-/* Reproductor de audio */
-audio {
+#chat-controls {
+    display: flex;
+    align-items: center;
     margin-top: 10px;
+}
+
+#emoji-picker {
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+#emoji-container {
+    display: none;
+    position: absolute;
+    background: #222;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 220px;
+    flex-wrap: wrap;
+    font-family: 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
+    z-index: 1000;
+}
+
+#emoji-container span {
+    cursor: pointer;
+    font-size: 24px;
+    margin: 5px;
+    display: inline-block;
 }

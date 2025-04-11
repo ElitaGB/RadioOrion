@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Radio Orion</title>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-    </head>     <!-- Enlace al CSS -->
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <header>
         <h1>Bienvenidos a Radio Orion</h1>
     </header>
-    
+
     <nav>
         <ul>
             <li><a href="#foro">Foro</a></li>
@@ -21,7 +19,7 @@
             <li><a href="#solicitudes">Pedir Canción</a></li>
         </ul>
     </nav>
-    
+
     <section id="radio">
         <h2>Escucha la Radio</h2>
         <audio id="stream-player" controls autoplay>
@@ -29,19 +27,19 @@
             Tu navegador no soporta el audio en vivo.
         </audio>
     </section>
-    
+
     <div class="container">
         <div class="left-column">
             <section id="djs">
                 <h2>Nuestros DJs</h2>
                 <div id="dj-list"></div>
             </section>
-            
+
             <section id="foro">
                 <h2>Foro de Discusión</h2>
                 <div id="forum-container"></div>
             </section>
-            
+
             <section id="solicitudes">
                 <h2>Pedir Canción</h2>
                 <input type="text" id="song-request" placeholder="Escribe la canción..." onkeypress="if(event.key === 'Enter') requestSong()">
@@ -49,15 +47,19 @@
                 <ul id="song-list"></ul>
             </section>
         </div>
-        
+
         <div class="right-column">
             <section id="chat">
                 <h2>Chat en Vivo</h2>
                 <div id="chat-box"></div>
-                <input type="text" id="chat-input" placeholder="Escribe un mensaje..." onkeypress="if(event.key === 'Enter') sendMessage()">
-                <button onclick="sendMessage()">Enviar</button>
+                <div id="chat-controls">
+                    <div id="emoji-picker">😊</div>
+                    <input type="text" id="chat-input" placeholder="Escribe un mensaje..." onkeypress="if(event.key === 'Enter') sendMessage()">
+                    <button onclick="sendMessage()">Enviar</button>
+                </div>
+                <div id="emoji-container"></div>
             </section>
-            
+
             <section id="noticias">
                 <h2>Noticias</h2>
                 <div id="news-banner"></div>
@@ -65,6 +67,6 @@
         </div>
     </div>
 
-    <script src="script.js" defer></script> <!-- Enlace al JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
